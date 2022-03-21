@@ -1,0 +1,22 @@
+{
+  "name": "@datafinder/openapisdk",
+  "version": "1.2.0",
+  "description": "ranger open api",
+  "keywords": [
+    "openapisdk",
+    "js"
+  ],
+  "author": "zhangpeng.spin<zhangpeng.spin@bytedance.com>",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "client.js",
+    "dsl.js",
+    "index.d.ts",
+    "README.md"
+  ],
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "node-fetch": "^2.6.1"
+  }
+}
