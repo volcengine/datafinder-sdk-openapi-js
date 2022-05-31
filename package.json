@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "crypto": "^1.0.1",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "form-data": "^4.0.0",
+    "mime": "^3.0.0"
   }
 }
