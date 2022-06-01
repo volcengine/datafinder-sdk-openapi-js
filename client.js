@@ -1,8 +1,9 @@
 const crypto = require('crypto');
 const { syncBuiltinESMExports } = require('module');
 const fetch = require("node-fetch");
-var mime = require('mime');
-const fs = require('fs');  
+const mime = require('mime');
+const fs = require('fs');
+const path = require("path");
 
 function sha256HMAC(sk, data) {
     const hmac = crypto.createHmac('sha256', sk)
@@ -150,7 +151,7 @@ class RangersClient {
         }
         let body = ''
         body=body.concat("\r\n").concat("--").concat(boundary).concat("\r\n");
-        body=body.concat(`Content-Disposition: form-data; name="file"; filename="${file}" \r\n`);
+        body=body.concat(`Content-Disposition: form-data; name="file"; filename="${path.basename(file)}" \r\n`);
         body=body.concat(`Content-Type: ${contentType} \r\n\r\n`);
         body=body.concat(fileContent);
         body=body.concat("\r\n--" + boundary + "--\r\n");
