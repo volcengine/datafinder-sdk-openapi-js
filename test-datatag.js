@@ -163,11 +163,11 @@ function testCalTag() {
         .catch(error => console.error('error:', error));
 }
 
-// testUploadFile();
+testUploadFile();
 // testCreateTag();
-testQueryResult();
-testQueryHistory();
-testExportTag()
-testQueryTagInfo();
-testQueryTags()
+// testQueryResult();
+// testQueryHistory();
+// testExportTag()
+// testQueryTagInfo();
+// testQueryTags()
 // testCalTag();
